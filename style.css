@@ -1,0 +1,101 @@
+.dropdown {
+    float: right;:/*diriger l'element*/
+}
+
+ul {
+    list-style-type: none;/*La propriété list-style-type permet de définir l'apparence d'un élément de liste. */
+    margin: 0;/*La propriété margin permet de définir la taille des marges sur les quatre côtés de l'élément*/
+    padding: 0;/*La propriété padding permet de définir les différents écarts de remplissage d'un élément, sur l'ensemble de ses côtés*/
+    overflow: hidden;/* La propriété overflow définit comment rogner le contenu, comment afficher les barres de défilement ou encore comment afficher le contenu*/
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;/*La propriété display définit le type de boîte utilisée pour le rendu d'un élément.*/
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;/*La propriété text-decoration est utilisée pour « décorer » le texte en ajoutant une ligne pouvant être positionnée sous, sur ou à travers le texte.
+*/
+    margin-right: 4em;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*La propriété box-shadow décrit les ombres appliquées à la boîte avec une liste d'ombres séparées par des virgules*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section {
+    width: 30%;
+    border: 1px solid black;
+    height: 13em;
+    box-sizing: border-box;
+    margin: 1em;
+    background-color: #CCC;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;/*La propriété justify-content définit la façon dont le navigateur distribue l'espace entre les objets flexibles selon l'axe principal de leur conteneur..
+*/
+}
+
+#text_hover {
+    overflow: hidden;
+    filter: contrast(0.2);
+    transition: ease 0.5s;
+}
+
+#text_hover img {
+    max-height: 100%;
+
+}
+#imgtext:hover .img2{
+  opacity:0.3;
+}
+#imgtext:hover .center {
+  opacity:1;
+}
+#miniatures {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#miniatures:hover img:nth-child(1),
+#miniatures:hover img:nth-child(3),
+#miniatures:hover img:nth-child(6),
+#miniatures:hover img:nth-child(8){
+    filter: contrast(0.2);/*La propriété filter permet d'appliquer des filtres et d'obtenir des effets graphiques de flou, de saturation, etc*/
+    transition: ease 0.5s;
+}
+
+.images_logos {
+    width: 4em;
+    margin: 0.35em;
+    /*height: 50px;*/
+}
